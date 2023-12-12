@@ -1,6 +1,7 @@
 package org.example;
 
-import mauriziocrispino.evento;
+import mauriziocrispino.dao.eventsDAO;
+import mauriziocrispino.entities.Evento;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,7 +12,9 @@ public class Application {
 
     public static void main(String[] args) {
         EntityManager em = emf.createEntityManager();
-        evento sd = new evento(em);
+        eventsDAO sd = new eventsDAO(em);
         System.out.println("Ciao");
+        Evento newevent = new Evento("Concerto","21/12/2023", "Evento invernale", "Pubblico", 5000);
+        System.out.println("Nuovo evento: "+ newevent);
     }
 }

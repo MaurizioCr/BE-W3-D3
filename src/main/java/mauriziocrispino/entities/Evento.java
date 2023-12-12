@@ -1,11 +1,16 @@
-package mauriziocrispino;
+package mauriziocrispino.entities;
 
-import javax.persistence.Column;
-import javax.persistence.EntityManager;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-public class evento {
+public class Evento {
+    public Evento(String titolo, String dataEvento, String descrizione, String accessType, int maxPartecipanti) {
+        this.titolo = titolo;
+        this.dataEvento = dataEvento;
+        this.descrizione = descrizione;
+        this.accessType = accessType;
+        this.maxPartecipanti = maxPartecipanti;
+    }
+
     @Id // <-- Indica che sarà chiave primaria (obbligatorio)
     @GeneratedValue // Si usa se si vuol fare gestire gli id al database
     int id;
@@ -19,15 +24,12 @@ public class evento {
     String descrizione;
 
     @Column (name = "Accesso")
-    AccessType accessType;
+    @Enumerated(EnumType.STRING)
+    private String accessType;
 
     @Column (name = "Limite di partecipanti")
     int maxPartecipanti;
 
-    private final EntityManager em;
-    public evento(EntityManager em) {
-        this.em=em;
-    }
 
     public String getTitolo() {
         return titolo;
@@ -61,11 +63,23 @@ public class evento {
         this.descrizione = descrizione;
     }
 
-    public AccessType getAccessType() {
+    public String getAccessType() {
         return accessType;
     }
 
-    public void setAccessType(AccessType accessType) {
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "id=" + id +
+                ", titolo='" + titolo + '\'' +
+                ", dataEvento='" + dataEvento + '\'' +
+                ", descrizione='" + descrizione + '\'' +
+                ", accessType='" + accessType + '\'' +
+                ", maxPartecipanti=" + maxPartecipanti +
+                '}';
+    }
+
+    public void setAccessType(String accessType) {
         this.accessType = accessType;
     }
 }

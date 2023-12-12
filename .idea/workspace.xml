@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="Evento con getter e setter">
+    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="Implementazione database">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/dao/eventsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/AccessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/AccessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Evento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +63,20 @@
       <option name="project" value="LOCAL" />
       <updated>1702394444937</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementazione database">
+      <option name="closed" value="true" />
+      <created>1702395361955</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702395361955</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Evento con getter e setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Evento con getter e setter" />
+    <MESSAGE value="Implementazione database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementazione database" />
   </component>
 </project>
