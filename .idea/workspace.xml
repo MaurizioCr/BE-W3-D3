@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/AccessType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ApplicationTest.java" afterDir="false" />
+    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="Evento con getter e setter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +53,19 @@
       <option name="presentableId" value="Default" />
       <updated>1702392760312</updated>
     </task>
+    <task id="LOCAL-00001" summary="Evento con getter e setter">
+      <option name="closed" value="true" />
+      <created>1702394444937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702394444937</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Evento con getter e setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evento con getter e setter" />
   </component>
 </project>

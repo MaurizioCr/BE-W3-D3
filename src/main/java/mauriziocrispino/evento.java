@@ -1,6 +1,7 @@
 package mauriziocrispino;
 
 import javax.persistence.Column;
+import javax.persistence.EntityManager;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -22,6 +23,11 @@ public class evento {
 
     @Column (name = "Limite di partecipanti")
     int maxPartecipanti;
+
+    private final EntityManager em;
+    public evento(EntityManager em) {
+        this.em=em;
+    }
 
     public String getTitolo() {
         return titolo;
