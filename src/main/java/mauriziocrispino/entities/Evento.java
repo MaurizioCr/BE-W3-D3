@@ -1,6 +1,8 @@
 package mauriziocrispino.entities;
 
 import javax.persistence.*;
+import java.util.*;
+
 @Entity
 public class Evento {
 
@@ -23,6 +25,12 @@ public class Evento {
 
     @Column (name = "Limitedipartecipanti")
     int maxPartecipanti;
+
+    @OneToMany
+    @JoinTable(name = "Evento",
+            joinColumns = @JoinColumn(name = "evento_id"),
+            inverseJoinColumns = @JoinColumn(name = "persona_id"))
+    private List<Partecipazione> ListaPartecipanti;
 
     public Evento(String titolo, String dataEvento, String descrizione, AccessType accessType, int maxPartecipanti) {
         this.titolo = titolo;
@@ -68,16 +76,25 @@ public class Evento {
         return accessType;
     }
 
-    @Override
-    public String toString() {
-        return "Evento{" +
-                "id=" + id +
-                ", titolo='" + titolo + '\'' +
-                ", dataEvento='" + dataEvento + '\'' +
-                ", descrizione='" + descrizione + '\'' +
-                ", accessType='" + accessType + '\'' +
-                ", maxPartecipanti=" + maxPartecipanti +
-                '}';
+    public void setAccessType(AccessType accessType) {
+        this.accessType = accessType;
+    }
+
+    public List<Partecipazione> getListaPartecipanti() {
+        return ListaPartecipanti;
+    }
+
+    public void setListaPartecipanti(List<Partecipazione> listaPartecipanti) {
+        ListaPartecipanti = listaPartecipanti;
+    }
+
+    public Evento(String titolo, String dataEvento, String descrizione, AccessType accessType, int maxPartecipanti, List<Partecipazione> listaPartecipanti) {
+        this.titolo = titolo;
+        this.dataEvento = dataEvento;
+        this.descrizione = descrizione;
+        this.accessType = accessType;
+        this.maxPartecipanti = maxPartecipanti;
+        ListaPartecipanti = listaPartecipanti;
     }
 
     public AccessType getAccesType() {

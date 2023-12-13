@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="Creazione evento">
+    <list default="true" id="1e004115-6097-41a7-89f8-d353c5a6d120" name="Changes" comment="Salvataggio su DB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/dao/LuogoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/dao/PersonaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Conferma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/GenerePersona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Luogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Partecipazione.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/dao/eventsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/dao/eventsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mauriziocrispino/entities/Evento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
     </list>
@@ -19,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -26,24 +33,61 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MaurizioCr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5111ac15-dc64-42eb-9b3b-77b53d7ba0ad" />
+        <option name="url" value="https://github.com/MaurizioCr/BE-W3-D3.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2ZRlQc7rQGlNq29CtKQ5wMAUHJj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maurizio/Desktop/Epicode/BackEnd/BE-W3/BE-W3-D3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BE-W3-D3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BE-W3-D3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,13 +122,22 @@
       <option name="project" value="LOCAL" />
       <updated>1702396614581</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Salvataggio su DB">
+      <option name="closed" value="true" />
+      <created>1702400372603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702400372603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Evento con getter e setter" />
     <MESSAGE value="Implementazione database" />
     <MESSAGE value="Creazione evento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creazione evento" />
+    <MESSAGE value="Salvataggio su DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Salvataggio su DB" />
   </component>
 </project>
